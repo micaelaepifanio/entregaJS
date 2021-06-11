@@ -1,0 +1,194 @@
+.fondo-rosa {
+  background-color: #F7DDDD; }
+
+.fondo-rosaMasClaro {
+  background-color: #F9E7E7; }
+
+.fondo-salmon {
+  background-color: #FA7979; }
+
+body {
+  background-color: #F7DDDD;
+  font-family: 'Quicksand', sans-serif; }
+  body ul {
+    list-style-type: none; }
+    body ul li {
+      display: inline-block; }
+      body ul li a, body ul li button {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #4C494A;
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        padding: 16px;
+        background-color: #F9E7E7;
+        border: solid 1px #E9DFDF;
+        transition: background-color 2s; }
+        body ul li a:hover, body ul li button:hover {
+          background-color: #FA7979;
+          text-decoration: none;
+          color: #4C494A; }
+
+.header__titulo-principal--rosa {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 629;
+  color: #ca9890fc;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+.main__parrafo--negrito {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #4C494A;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.center {
+  margin: auto;
+  padding: 5px;
+  text-align: center; }
+
+.header__icons {
+  position: absolute;
+  top: 15px;
+  right: 30px; }
+  .header__icons img {
+    padding: 3px; }
+
+.presentacion {
+  float: left;
+  width: 50%; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 35px;
+  margin-bottom: 80px; }
+
+.textito {
+  margin-top: 50px;
+  text-align: justify; }
+
+.tabla {
+  width: 100%; }
+
+.linea {
+  overflow: auto; }
+  .linea div {
+    float: left;
+    width: 30%; }
+    .linea div img {
+      width: 98%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-top: 50px;
+  align-items: center; }
+  .grid img {
+    width: 200px;
+    transition: all 2s; }
+
+.transform:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0px 5px 21px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 21px 5px rgba(0, 0, 0, 0.5); }
+
+.carousel.slide {
+  margin-top: 10px; }
+
+.vertical-margin {
+  margin-top: 30px; }
+
+footer {
+  background-color: #e19a96;
+  padding: 20px; }
+
+main {
+  background-color: #f3cdcd;
+  padding: 20px; }
+
+header {
+  padding: 20px; }
+
+.no-padding {
+  margin: 0;
+  padding: 0; }
+
+.texto-footer {
+  font-size: 12px; }
+
+.formulario {
+  width: 40%;
+  padding: 30px; }
+
+.animar-titulito {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  animation: 1s ease-out 0s 1 flipInX; }
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotateX(-5deg);
+    transform: perspective(400px) rotateX(-5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+.display-block {
+  display: block; }
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .formulario {
+    width: inherit; } }
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr); } }
+
+.item-lista img {
+  width: 65%;
+}
+
+.item-lista{
+  padding: 10px;
+}
+
+.lightColor {
+  background-color: #F7DDDD;
+  padding: 5px;
+}
